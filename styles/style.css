@@ -79,14 +79,15 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 386px;
-
 }
 
 .result__video {
   width: inherit;
-  object-fit: contain;
+  height: inherit;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -133,6 +134,15 @@ ol {
   cursor: text;
 }
 
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__label:has(.search-form__textfield:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
 }
@@ -147,6 +157,14 @@ ol {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.search-form__label:has(.search-form__checkbox:focus-visible) {
+  outline: 1px solid #fff;
+}
+
+.search-form__pseudo-checkbox:focus {
+  outline: 1px solid #fff;
 }
 
 .search-form__pseudo-checkbox {
@@ -219,7 +237,8 @@ ol {
 }
 
 .title {
-  margin-bottom: 26px;
+  margin-bottom: 22px;
+  padding-top: 5px;
 
   font-family: Oswald;
   font-weight: 700;
@@ -233,8 +252,20 @@ ol {
 }
 
 .content__list-container {
+  position: relative;
   height: 298px;
   overflow-y: scroll;
+  outline: none;
+}
+
+.content__list {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.content__list-item {
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .content__list-item:not(:last-child) {
@@ -242,17 +273,39 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   text-decoration: none;
   color: white;
+}
+
+.content__card-link_current .content__video-card-description-container {
+  background-color: #545050;
+}
+
+.content__card-link:active .content__video-card-description-container {
+  background-color: #545050;
 }
 
 .content__video-card {
   display: flex;
 }
 
+.content__video-card:hover {
+  text-decoration: underline 1px solid #fff;
+  /* text-underline-offset: 1px; */
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+}
+
 .content__video-card-description-container {
   max-width: 196px;
-  max-height: 103px;
+  /* max-height: 103px; */
   flex-grow: 1;
 }
 
@@ -286,6 +339,9 @@ ol {
 
 .content__video-card-thumbnail {
   width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .more-button {
