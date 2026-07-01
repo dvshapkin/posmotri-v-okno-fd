@@ -19,7 +19,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', Helvetica, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -121,7 +121,7 @@ ol {
   background-color: transparent;
 
 
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', Helvetica, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -200,7 +200,7 @@ ol {
   color: #fff;
   background-color: transparent;
 
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', Helvetica, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
@@ -239,7 +239,7 @@ ol {
   margin-bottom: 22px;
   padding-top: 5px;
 
-  font-family: Oswald;
+  font-family: Oswald, Impact, 'Arial Black', sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -310,7 +310,7 @@ ol {
 .content__video-card-title {
   margin-bottom: 6px;
 
-  font-family: Oswald;
+  font-family: Oswald, Impact, 'Arial Black', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
@@ -327,7 +327,7 @@ ol {
   -webkit-box-orient: vertical;
   overflow: hidden;
 
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', Helvetica, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
