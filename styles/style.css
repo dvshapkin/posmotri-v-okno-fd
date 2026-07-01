@@ -75,7 +75,6 @@ ol {
   gap: 30px;
 
   width: 1140px;
-  height: 534px;
 }
 
 .result__video-container {
@@ -305,7 +304,6 @@ ol {
 
 .content__video-card-description-container {
   max-width: 196px;
-  /* max-height: 103px; */
   flex-grow: 1;
 }
 
@@ -324,17 +322,15 @@ ol {
 }
 
 .content__video-card-description {
-  /* height: clamp(16.2px, 16.2px, 64px); */
-  max-height: 64px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 
   font-family: Fira Sans Condensed;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
-
-  /* white-space: nowrap; */
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .content__video-card-thumbnail {
